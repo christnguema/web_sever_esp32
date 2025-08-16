@@ -32,6 +32,13 @@ Ce projet utilise un ESP32 pour créer un serveur web simple permettant de contr
 4. Une fois connecté, ouvrez un navigateur et entrez l’adresse IP de l’ESP32, généralement `192.168.4.1`.  
 5. L’interface web s’affiche, vous permettant de contrôler la LED et de lire la luminosité en temps réel.
 
+### Ajout du driver CP210x (si nécessaire)
+Sur certains PC Windows, l’ESP32 n’est pas détecté automatiquement. Il peut être nécessaire d’installer le **driver CP210x** :  
+1. Télécharger le driver depuis le site officiel [Silicon Labs CP210x](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers).  
+2. Choisir la version correspondant à votre système (Windows 32 ou 64 bits).  
+3. Installer le driver et redémarrer l’ordinateur si nécessaire.  
+4. Reconnecter l’ESP32 : il doit maintenant apparaître dans le Gestionnaire de périphériques sous "Ports (COM & LPT)".
+
 ### Utilisation
 - Accéder à l’interface web
 - Cliquer sur **ON** / **OFF** pour contrôler la LED
@@ -69,6 +76,13 @@ This project uses an ESP32 to create a simple web server that allows controlling
 3. Connect using the password defined in the code (`123456789`).  
 4. Once connected, open a browser and enter the ESP32’s IP address, usually `192.168.4.1`.  
 5. The web interface will load, allowing you to control the LED and read the light sensor in real time.
+
+### Adding the CP210x driver (if needed)
+On some Windows PCs, the ESP32 may not be detected automatically. You might need to install the **CP210x driver**:  
+1. Download the driver from the official [Silicon Labs CP210x](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) website.  
+2. Select the version matching your system (Windows 32 or 64 bits).  
+3. Install the driver and restart your PC if required.  
+4. Reconnect the ESP32: it should now appear in Device Manager under "Ports (COM & LPT)".
 
 ### Usage
 - Open the web interface
@@ -108,7 +122,15 @@ Dieses Projekt verwendet einen ESP32, um einen einfachen Webserver zu erstellen,
 4. Nach erfolgreicher Verbindung einen Browser öffnen und die IP-Adresse des ESP32 eingeben, normalerweise `192.168.4.1`.  
 5. Das Webinterface erscheint und ermöglicht die Steuerung der LED und die Anzeige der Lichtwerte in Echtzeit.
 
+### Installation des CP210x-Treibers (falls erforderlich)
+Auf einigen Windows-PCs wird der ESP32 nicht automatisch erkannt. Es kann notwendig sein, den **CP210x-Treiber** zu installieren:  
+1. Treiber von der offiziellen Website [Silicon Labs CP210x](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) herunterladen.  
+2. Die Version für Ihr System auswählen (Windows 32 oder 64 Bit).  
+3. Treiber installieren und den Computer bei Bedarf neu starten.  
+4. ESP32 erneut anschließen: Er sollte nun im Geräte-Manager unter "Anschlüsse (COM & LPT)" erscheinen.
+
 ### Nutzung
 - Webinterface öffnen
 - Auf **ON** / **OFF** klicken, um die LED zu steuern
 - Echtzeit-Lichtwerte beobachten
+
